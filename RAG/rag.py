@@ -41,7 +41,7 @@ print(documents[0].page_content)
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
-llm = ChatOpenAI(openai_api_base = "https://openrouter.ai/api/v1", openai_api_key = "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", model = "anthropic/claude-haiku-4.5")
+llm = ChatOpenAI(openai_api_base = "https://openrouter.ai/api/v1", openai_api_key = "YOUR KEY", model = "anthropic/claude-haiku-4.5")
 
 # Instantiate the embedding model
 embedder = HuggingFaceEmbeddings()
