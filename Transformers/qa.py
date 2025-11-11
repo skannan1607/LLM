@@ -19,7 +19,7 @@ for q in question:
 import os
 !pip install langchain-community
 from langchain.chat_models import ChatOpenAI
-llm = ChatOpenAI(openai_api_base = "https://openrouter.ai/api/v1", openai_api_key = "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", model = "openai/gpt-3.5-turbo")
+llm = ChatOpenAI(openai_api_base = "https://openrouter.ai/api/v1", openai_api_key = "your key", model = "openai/gpt-3.5-turbo")
 question = ["When was created??","by whom","What is SQuAD?"]
 for q in question:
   res = llm.invoke(q)
